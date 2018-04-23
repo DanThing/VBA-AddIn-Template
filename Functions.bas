@@ -1,6 +1,28 @@
 Attribute VB_Name = "kFunct"
 Option Explicit
 
+
+Public Function FileLocation(filename As String) As String
+' Shows a dialog box to get the location and file name for the indictaed file.
+ ' If cancel selected the this returns vbNullString
+    Dim intChoice As Integer    
+        If MsgBox( _        
+            "Can you show me where the " & filename & " file is located?", _        
+            vbOKCancel, _        
+            "...") = vbOK Then        
+        ' User to select file to open        
+            Application.FileDialog(msoFileDialogOpen).AllowMultiSelect = False        
+            intChoice = Application.FileDialog(msoFileDialogOpen).Show        
+            If intChoice <> 0 Then            
+                    FileLocation = Application.FileDialog( _                        
+                                    msoFileDialogOpen).SelectedItems(1)            
+                    Exit Function        
+            End If    
+        End If    
+        FileLocation = vbNullString
+End Function
+    
+    
 Public Sub Speedup(Optional doit As Boolean = True)
     If doit = True Then
         Application.ScreenUpdating = False
@@ -73,3 +95,15 @@ Do While Len(sp) <= a
     sp = sp & Chr(32)
 Loop
 End Function
+
+Function FS() As String  
+    FS = Application.PathSeperator
+End Function
+
+Sub ClearNameRngs(ws As Worksheet)
+' clears the Named Ranged for the indicated worksheet.
+Dim xName As Name
+    For Each xName In thisWB.Names    
+        If InStr(1, xName, ws.Name) Then xName.Delete
+    Next xName
+End Sub
