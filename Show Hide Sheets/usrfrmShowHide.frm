@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} usrfrmShowHide 
-   Caption         =   "Komatsu - Show/Hide Worksheet Tabs"
+   Caption         =   "Show/Hide Worksheet Tabs"
    ClientHeight    =   4650
    ClientLeft      =   120
    ClientTop       =   465
@@ -15,7 +15,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 '=====================================================
-' Workbook Name: Komatsu Report Base Tools & Data.xlsm
+' Workbook Name: Base Tools & Data.xlsm
 '   Module: Main
 ' Code by Daniel Boyce
 ' Version: 1.2.20180504
