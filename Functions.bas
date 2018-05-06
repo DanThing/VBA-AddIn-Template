@@ -1,4 +1,4 @@
-Attribute VB_Name = "kFunct"
+Attribute VB_Name = "modFunctions"
 Option Explicit
 
 
