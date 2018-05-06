@@ -22,6 +22,33 @@ Attribute VB_Exposed = False
 '=====================================================
 Option Explicit
 
+Private Sub buildTOC()
+Dim ws As Worksheet, rowCount As Long
+Dim tip As String
+rowCount = 17
+With ThisWorkbook.Worksheets("Tools Page")
+    .Range("B:C").Clear
+    For Each ws In Worksheets
+        tip = ""
+        If Not ws.Name = "Tools Page" Then
+            If ws.Visible = xlSheetHidden Then
+                .Cells(rowCount, 2) = ws.Name
+                .Cells(rowCount, 3) = "<- Click 'Show/Hide Worksheet Tabs'"
+            Else
+                .Hyperlinks.Add _
+                    Anchor:=.Cells(rowCount, 2), _
+                    Address:="", _
+                    SubAddress:=ws.Name & "!A1", _
+                    ScreenTip:=tip, _
+                    TextToDisplay:=ws.Name
+                .Cells(rowCount, 3) = tip
+            End If
+            rowCount = rowCount + 1
+        End If
+    Next ws
+End With
+End Sub
+
 Private Sub showSheet(index As Long, sheetname As String)
     Application.ScreenUpdating = False
     With Me
