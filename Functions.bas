@@ -46,7 +46,7 @@ If errCode = vbNullString Then
     errDesc = Err.Description
 End If
 Debug.Print errCode; errDesc
-If MsgBox("Error:" & nl & errCode & nl & errDesc & nl & "Do you want to continue?", vbYesNo, "Komatsu") = vbNo Then
+If MsgBox("Error:" & nl & errCode & nl & errDesc & nl & "Do you want to continue?", vbYesNo) = vbNo Then
     Speedup (False)
     End
 End If
