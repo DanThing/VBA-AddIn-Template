@@ -65,7 +65,4 @@ This template contains the following:
      - UserForm_Click
      - UserForm_Initialize
      - UserForm_QueryClose
-     - updateText     
-  - ProgressBar
-    - Code by Ejaz Ahmed
-    - Website http://strugglingtoexcel.wordpress.com/    
+     - updateText       
