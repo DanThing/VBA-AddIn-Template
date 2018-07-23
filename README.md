@@ -6,21 +6,21 @@ This template contains the following:
   - HelpContents
   - Settings
 - Classes
-  - ThisWorkbook
+  - [ThisWorkbook](/Classes/ThisWorkbook.cls)
       - Workbook_Open
       - Workbook_BeforeClose
       - AddToCellMenu
       - DeleteFromCellMenu
 - Modules
-  - AddIn_MAIN
+  - [AddIn_MAIN](/Modules/AddIn_MAIN.bas)
     - SpeedUp
     - openSettings
-  - AddIn_Settings
+  - [AddIn_Settings](/Modules/AddIn_Settings.bas)
       - Company
       - getSetting
       - changeSetting
       - LicencingForm
-   - AddIn_Functions
+   - [AddIn_Functions](/Modules/AddIn_Functions.bas)
       - OperationCompleted
       - OperationCancelled
       - ExportThisWS
@@ -37,28 +37,28 @@ This template contains the following:
       - FS
       - getArrayHeader
       - DisabledFunction  
-  - AddIn_ErrHandler
+  - [AddIn_ErrHandler](/Modules/AddIn_ErrHandler.bas)
       - errHandler
       - LogDebug
       - LogWarning
       - LogError
       - ProjectDump
 - UserForms
-  - CreateNewHelpForm
+  - [CreateNewHelpForm](/UserForms/CreateNewHelpForm.frm)
      - btn_Delete_Click
      - btn_Save_Click
      - Edit
      - UserForm_QueryClose
-  - HelpForm
+  - [HelpForm](/UserForms/HelpForm.frm)
      - btn_Cancel_Click
      - btn_New_Click
      - HelpCombo1_Change
      - UserForm_Initialize
      - UserForm_QueryClose     
-  - LicenceForm
+  - [LicenceForm](/UserForms/LicenceForm.frm)
      - UserForm_Initialize
      - UserForm_QueryClose     
-  - LogForm
+  - [LogForm](/UserForms/LogForm.frm)
      - btn_projectdump_Click
      - cancelBtn_Click
      - copyBtn_Click
