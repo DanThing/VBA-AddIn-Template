@@ -55,7 +55,7 @@ This template contains the following:
      - HelpCombo1_Change
      - UserForm_Initialize
      - UserForm_QueryClose     
-  -LicenceForm
+  - LicenceForm
      - UserForm_Initialize
      - UserForm_QueryClose     
   - LogForm
