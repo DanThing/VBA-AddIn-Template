@@ -1,2 +1,71 @@
-# VBACode
-General VBA code
+# MS Excel AddIn Template 
+AddIn template for MS Excel
+This template contains the following:
+
+- Worksheets
+  - HelpContents
+  - Settings
+- Classes
+  - ThisWorkbook
+      - Workbook_Open
+      - Workbook_BeforeClose
+      - AddToCellMenu
+      - DeleteFromCellMenu
+- Modules
+  - AddIn_MAIN
+    - SpeedUp
+    - openSettings
+  - AddIn_Settings
+      - Company
+      - getSetting
+      - changeSetting
+      - LicencingForm
+   - AddIn_Functions
+      - OperationCompleted
+      - OperationCancelled
+      - ExportThisWS
+      - DiffBetween
+      - WSExists
+      - IsWorkBookOpen
+      - openWB
+      - getFile
+      - getFolder
+      - Lastrow
+      - LastCol
+      - RndUp
+      - ClearNameRngs
+      - FS
+      - getArrayHeader
+      - DisabledFunction  
+  - AddIn_ErrHandler
+      - errHandler
+      - LogDebug
+      - LogWarning
+      - LogError
+      - ProjectDump
+- UserForms
+  - CreateNewHelpForm
+     - btn_Delete_Click
+     - btn_Save_Click
+     - Edit
+     - UserForm_QueryClose
+  - HelpForm
+     - btn_Cancel_Click
+     - btn_New_Click
+     - HelpCombo1_Change
+     - UserForm_Initialize
+     - UserForm_QueryClose     
+  -LicenceForm
+     - UserForm_Initialize
+     - UserForm_QueryClose     
+  - LogForm
+     - btn_projectdump_Click
+     - cancelBtn_Click
+     - copyBtn_Click
+     - UserForm_Click
+     - UserForm_Initialize
+     - UserForm_QueryClose
+     - updateText     
+  - ProgressBar
+    - Code by Ejaz Ahmed
+    - Website http://strugglingtoexcel.wordpress.com/    
