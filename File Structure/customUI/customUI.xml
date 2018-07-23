@@ -1,1 +1,17 @@
-
+<!-- Custom tab for AddIn   -->
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+	<ribbon>
+		<tabs>
+      
+			<tab id="AddIn_20180720_Tab10" label="AddIn Template" insertAfterMso="TabHome">
+			
+        <group id="AddIn_20180720_Group10" label="Settings">
+					<button id="AddIn_20180720_Button10" label="Settings" size="normal" onAction="AddIn_20180720_openSettings" imageMso="GroupTools" />		
+					<button id="AddIn_20180720_Button11" label="AddIn Licence" size="normal" onAction="AddIn_20180720_LicencingForm" imageMso="DigitallySignMessage" />
+					<separator id="separator" />
+				</group>
+			
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
